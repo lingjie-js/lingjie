@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>零界-usage-index</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <script vite-if="import.meta.env.VITE_ENV === production">
+      window.__lingjie_config__ = {
+        shellSrc: `<{ VITE_LINGJIE_SHELL_PATH }>`
+      }
+    </script>
+    <script vite-else>
+      window.__lingjie_config__ = {
+        disable:true
+      }
+    </script>
+    
+    <!-- import lingjie-page -->
+    <script type="module" src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+    <script type="module" src="../src/docs/usage-index.tsx"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

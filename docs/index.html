@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lingjie Microapp Shell</title>
+    <link rel="icon" type="image/x-icon" href="./assets//favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to the Lingjie Microapp Shell.</h1>
+      <p>
+        Please specify the app URL in the query parameters with key 'lingjie_url'.
+      </p>
+    </div>
+    <script vite-if="import.meta.env.VITE_ENV === production">
+      window.__lingjie_shell_config__ = {
+        rules: [
+          {
+            test: `<{ VITE_DOCS_PATH }>/docs/index`,
+            timeout: 5000,
+            backAction: "reload",
+            waitFor:'loaded'
+          },
+          {
+            test: `<{ VITE_DOCS_PATH }>/docs/quick-start`,
+            timeout: 5000,
+            backAction: "reload",
+            waitFor:'code',
+          },
+          {
+            test: `<{ VITE_DOCS_PATH }>/docs/usage-index`,
+            timeout: 5000,
+            backAction: "reload",
+            waitFor:'svg',
+          },
+          {
+            test: `<{ VITE_DOCS_PATH }>/docs/usage`,
+            timeout: 5000,
+            backAction: "reload",
+            waitFor:'code, img',
+          },
+        ],
+      };
+    </script>
+    <script type="module" src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Lingjie Microapp Shell</title>
+		<link rel="icon" type="image/x-icon" href="/lingjie/dist/lingjie/assets/favicon.3e75cae4.ico"/>
+		<style>* { margin: 0; padding: 0; } .container { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; position: absolute; text-align: center; }</style>
+		<script type="module" crossorigin src="/lingjie/dist/lingjie/assets/index.1b54bc75.js"></script>
+		<script type="module">try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;</script>
+		<script type="module">!function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+	</head>
+	<body>
+		<div class="container">
+			<h>Welcome to the Lingjie Microapp Shell.</h>
+			<p>Please specify the app URL in the query parameters with key 'lingjie_url'.</p>
+		</div>
+		<script>window.__lingjie_shell_config__ = { rules: [ { test: `/lingjie/dist/page/docs/index`, timeout: 5000, backAction: "reload", waitFor:'loaded' }, { test: `/lingjie/dist/page/docs/quick-start`, timeout: 5000, backAction: "reload", waitFor:'code', }, { test: `/lingjie/dist/page/docs/usage-index`, timeout: 5000, backAction: "reload", waitFor:'svg', }, { test: `/lingjie/dist/page/docs/usage`, timeout: 5000, backAction: "reload", waitFor:'code, img', }, ], };</script>
+		<script type="module" src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+		<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+		<script nomodule id="vite-legacy-polyfill" src="/lingjie/dist/lingjie/assets/polyfills-legacy.b851764d.js"></script>
+		<script nomodule id="vite-legacy-entry" data-src="/lingjie/dist/lingjie/assets/index-legacy.dbac3509.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+	</body>
+</html>

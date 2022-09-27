@@ -1,0 +1,107 @@
+{
+  "markdown": {
+    "next": "Next:",
+    "previous": "Previous:"
+  },
+  "header": {
+    "lingjie": "Lingjie",
+    "home": "Home",
+    "quick-start": "Quick Start",
+    "more": "More"
+  },
+  "footer": {
+    "lingjie": "Lingjie",
+    "description": "This website runs in lingjie micro-frontend"
+  },
+  "index": {
+    "title": "Lingjie(零界): A Zero-cost way To Implement Micro-frontend",
+    "subtitle": "It enables users to switch different apps back and forth smoothly without page refreshing, just like SPA, and simulates the switch effect of web view in the native app.",
+    "card": {
+      "1": {
+        "title": "No need to rewrite the existing app",
+        "description": "Technology agnostic. No worries about the difficulty of development."
+      },
+      "2": {
+        "title": "Only one line of code is needed",
+        "description": "Every web page only needs to import one script file to join the lingjie micro-frontend."
+      },
+      "3": {
+        "title": "Switch pages without refreshing",
+        "description": "Users could switch different web pages back and forth without refreshing and get consistent UX via lingjie."
+      },
+      "4": {
+        "title": "Safe & strong",
+        "description": "Every web page can disconnect lingjie micro-frontend at any time."
+      },
+      "5": {
+        "title": "State Synchronization",
+        "description": "Refreshing page will not lose its routing state. All web pages could remain in their original state, such as scroll bar position, and show rapidly when back to the previous page."
+      },
+      "6": {
+        "title": "Perfect isolation",
+        "description": "Lingjie isolates both styles and scripts perfectly and avoids namespace pollution among different pages."
+      }
+    },
+    "button": "Quick Start"
+  },
+  "quick-start": {
+    "title": "Quick Start",
+    "step": {
+      "1": {
+        "title": "Initialization"
+      },
+      "2": {
+        "title": "Create lingjie-shell",
+        "markdown": {
+          "blockquote": {
+            "create-lingjie-shell": "Create a folder to place lingjie-shell. Lingjie-shell will load each page in the iframe individually. All related operations about the iframe, such as loading, switching, and destroying, will take place in this shell."
+          },
+          "code": {
+            "lingjie-rules": "<!-- set lingjie rule before importing lingjie-shell script -->",
+            "import-shell-script": "<!-- import lingjie-shell script -->"
+          }
+        },
+        "create-lingjie-folder": "Create lingjie folder",
+        "create-entry-file": "Create entry file `index.html`",
+        "import-lingjie-shell": "Import <0>lingjie-shell</0> script in the entry file, then this file will become the <1>shell</1>. Next, configure the `__lingjie_shell_config__` variable in the shell to define the path rules that allow connecting lingjie micro-frontend and related actions. Please note that the `__lingjie_shell_config__` configuration should place before importing the lingjie-shell script. Following is the demonstration. About <2>lingjie rule</2>."
+      },
+      "3": {
+        "title": "Connect with lingjie-shell",
+        "markdown": {
+          "blockquote": {
+            "create-lingjie-page": " Now, lingjie-shell is ready, creating apps connect with lingjie-shell next. Following is the demonstration. "
+          },
+          "code": {
+            "modify-title": "<!-- change the title same as the file name -->",
+            "import-lingjie-page": "<!-- import lingjie-page script -->",
+            "modify-content": "<!-- change the content same as the file name -->"
+          }
+        },
+        "one-level-up": "Change the directory to one level up",
+        "create-demo-folder": "Create demo folder",
+        "create-demo-files": "Creating `index.html`, `projectA.html`, and `projectB.html`. `index.html` is the entry file of the demo. `projectA.html` and `projectB.html` represent two different apps.",
+        "import-lingjie-page": "Copy the following code to `index.html`, `projectA.html`, and `projectB.html` separately. Modify the title and content correspondingly. Please note we import <0>lingjie-page</0> script here, which let the app redirect to <1>lingjie-shell</1>."
+      },
+      "4": {
+        "title": "File structure"
+      },
+      "5": {
+        "title": "Check the Effect",
+        "install-npx": "Install npx, skip this step if it's installed already.",
+        "start-local-server": "Create a static HTTP server at port 8080",
+        "instruction": "Open <0>http://localhost:8080/demo</0> in the browser. Pages should <1>switch without refreshing</1> when clicking `go to index`, `go to project A`, or `go to project B`.",
+        "more": "More"
+      }
+    }
+  },
+  "usage-index": {
+    "title": "Introduction to Lingjie Micro-frontend",
+    "subtitle": "There is a trade-off between zero-cost implementation and the scope of application. In general, the pages that follow the best practice of modern web development tend to join lingjie without additional modification. The solution to particular cases and FAQs are listed below."
+  },
+  "how-lingjie-works": "How Lingjie Works",
+  "lingjie-shell-and-lingjie-page": "Lingjie-shell & Lingjie-page",
+  "lingjie-config-rule": "Lingjie Rule Config",
+  "lingjie-data-attrs": "Lingjie HTML Attribute",
+  "disable-lingjie-temporarily": "How to Disable Lingjie Temporarily",
+  "lingjie-JS-API": "Lingjie JS API"
+}

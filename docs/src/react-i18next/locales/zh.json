@@ -1,0 +1,107 @@
+{
+  "markdown": {
+    "next": "下一页：",
+    "previous": "上一页："
+  },
+  "header": {
+    "lingjie": "零界",
+    "home": "首页",
+    "quick-start": "快速开始",
+    "more": "更多用法"
+  },
+  "footer": {
+    "lingjie": "零界",
+    "description": "本站点由零界提供微前端支持"
+  },
+  "index": {
+    "title": "零界：一种零成本微前端解决方案",
+    "subtitle": "极低的成本在不同应用之间快速无刷新切换，在多页应用中拥有类似 SPA 的体验，并模拟了Native App 中 WebView 切换的机制。",
+    "card": {
+      "1": {
+        "title": "无需改造原有代码",
+        "description": "技术栈无关，无需担心前端开发的难度。"
+      },
+      "2": {
+        "title": "几乎零接入成本",
+        "description": "每个页面只需引入一个 script 文件，即可加入零界微前端机制。"
+      },
+      "3": {
+        "title": "无刷新切换页面",
+        "description": "零界将多个页面组织起来，提供无刷新页面切换的 SPA 体验，给用户一致性的体验。"
+      },
+      "4": {
+        "title": "安全可靠",
+        "description": "所有页面可随时退出零界微前端机制，回归原始状态。"
+      },
+      "5": {
+        "title": "状态同步",
+        "description": "刷新页面不会丢失路由状态，页面回退更快展示，并保留前一页的滚动条以及页面状态。"
+      },
+      "6": {
+        "title": "完美隔离",
+        "description": "完全隔离了每个页面的css和js，避免了各个应用之间的变量污染。"
+      }
+    },
+    "button": "快速开始"
+  },
+  "quick-start": {
+    "title": "快速开始",
+    "step": {
+      "1": {
+        "title": "初始化项目"
+      },
+      "2": {
+        "title": "创建零界shell",
+        "markdown": {
+          "blockquote": {
+            "create-lingjie-shell": "新建一个文件夹存放零界shell页面， 所有接入零界微前端的应用都会作为iframe在这里进行加载、切换、销毁。"
+          },
+          "code": {
+            "lingjie-rules": "<!-- 零界配置规则，放在引入lingjie-shell脚本之前 -->",
+            "import-shell-script": "<!-- 引入零界shell脚本 -->"
+          }
+        },
+        "create-lingjie-folder": "新建 lingjie 文件夹",
+        "create-entry-file": "创建入口文件 index.html",
+        "import-lingjie-shell": "在入口文件中引入<0>零界shell</0>脚本，这个文件就会成为零界<1>shell</1>。之后在shell中设置__lingjie_shell_config__变量来配置零界规则，该规则设置允许加入零界微前端的路径匹配规则和相关行为，请注意零界配置规则应放在引入零界shell脚本之前，下面为示例代码，关于<2>配置规则</2>。"
+      },
+      "3": {
+        "title": "接入零界",
+        "markdown": {
+          "blockquote": {
+            "create-lingjie-page": "此时零界shell已准备完毕，接下来创建接入零界的应用，以下为示例代码"
+          },
+          "code": {
+            "modify-title": "<!-- 根据文件名改为对应的title名称 -->",
+            "import-lingjie-page": "<!-- 引入零界page脚本 -->",
+            "modify-content": "<!-- 根据文件名改为对应的内容 -->"
+          }
+        },
+        "one-level-up": "返回上一层目录",
+        "create-demo-folder": "创建demo文件夹",
+        "create-demo-files": "创建 index.html，projectA.html 和 projectB.html。index.html 为demo的入口文件，projectA.html 和 projectB.html分别为两个不同的应用",
+        "import-lingjie-page": "将下面的代码分别写入 index.html，projectA.html 和 projectB.html中。把每一页的title和文字内容改为对应的index，projectA 和 projectB。请注意这里引入了<0>零界page脚本</0>，该脚本可以让页面重定向到<1>零界shell</1>。"
+      },
+      "4": {
+        "title": "目录结构"
+      },
+      "5": {
+        "title": "验收效果",
+        "install-npx": "安装npx，如果已经安装可以跳过这一步",
+        "start-local-server": "在本地8080端口开启一个服务",
+        "instruction": "在浏览器中打开网址<0>http://localhost:8080/demo</0>，点击里面的 go to index ，go to project A或 go to project B，页面之间的跳转应当<1>无刷新切换</1>。",
+        "more": "更多用法"
+      }
+    }
+  },
+  "usage-index": {
+    "title": "更多用法与常见问题",
+    "subtitle": "尽管零界声称零成本，但这个零成本有它的适用范围。一般而言，遵循 Modern Web 最佳实践的页面，不需要为适配零界而改动。少数特殊情况的处理办法与常见问题，列举如下。"
+  },
+  "how-lingjie-works": "零界微前端工作原理",
+  "lingjie-shell-and-lingjie-page": "配置零界shell和零界page",
+  "lingjie-config-rule": "零界微前端链接配置规则",
+  "lingjie-data-attrs": "零界微前端页面跳转的标签属性配置",
+  "disable-lingjie-temporarily": "临时关闭微前端机制",
+  "lingjie-JS-API": "零界微前端 JS API"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "lingjie-docs",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "npm run build:shell && npm run build:docs",
+    "build:shell": "vite build --config ./vite.config.shell.ts --mode production",
+    "build:docs": "vite build --config ./vite.config.docs.ts --mode production",
+    "preview": "vite preview --base /lingjie-docs",
+    "prebuild": "rimraf lib dist"
+  },
+  "dependencies": {
+    "i18next": "^21.8.13",
+    "node-fetch": "2.6.6",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-i18next": "^11.18.0",
+    "react-markdown": "^7.1.1",
+    "react-syntax-highlighter": "^15.4.5",
+    "react-use-localstorage": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "@types/node-fetch": "2.5.12",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "@vitejs/plugin-legacy": "^1.6.4",
+    "@vitejs/plugin-react-refresh": "^1.1.0",
+    "autoprefixer": "^10.4.0",
+    "fast-glob": "^3.2.7",
+    "postcss": "^8.4.5",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.7",
+    "vite": "^2.0.1",
+    "vite-plugin-html-env": "^1.2.4"
+  }
+}

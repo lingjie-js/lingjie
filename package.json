@@ -1,0 +1,45 @@
+{
+  "name": "lingjie",
+  "version": "1.0.0",
+  "homepage": "https://lingjie-js.github.io/lingjie/dist/page/docs/index.html",
+  "author": "https://github.com/Lucifier129",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run build:shell && npm run build:page",
+    "build:page": "vite build --config ./vite.config.page.ts",
+    "build:shell": "vite build --config ./vite.config.shell.ts",
+    "build:docs": "cd ./docs && npm run build",
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingjie-js/lingjie.git"
+  },
+  "keywords": [
+    "micro frontend",
+    "micro frontends",
+    "microfrontend",
+    "microfrontends",
+    "micro-frontend",
+    "micro-frontends",
+    "iframe",
+    "webview",
+    "MPA"
+  ],
+  "dependencies": {
+    "rsup-progress": "^3.0.0",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.25.0-alpha-jul-21-2022",
+    "typescript": "^4.2.2",
+    "vite": "^2.0.1"
+  }
+}
