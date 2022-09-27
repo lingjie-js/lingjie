@@ -41,7 +41,7 @@ type LingjieShellConfig = {
   }
 </script>
 <!-- 引入零界shell脚本 -->
-<script src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+<script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
 ```
 
 &nbsp;
@@ -79,7 +79,7 @@ type LingjieConfig = {
   }
 </script>
 <!-- 引入零界page脚本 -->
-<script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+<script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 ```
 
 &nbsp;

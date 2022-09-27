@@ -16,11 +16,14 @@
 在页面加载 `page.js` 之前，设置全局变量，如：
 
 ```html
+<!-- before loading lingjie-page script-->
 <script>
   window.__lingjie_config__ = {
     disable: true
   }
 </script>
+<!-- import lingjie-page script-->
+<script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 ```
 
 这个方式影响范围比方式一更大，所有包含这段代码的页面，都退出微前端机制。

@@ -40,7 +40,7 @@ For example
   }
 </script>
 <!-- import lingjie-shell script -->
-<script src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+<script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
 ```
 
 &nbsp;
@@ -76,7 +76,7 @@ For example
   }
 </script>
 <!-- import lingjie-page script -->
-<script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+<script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 ```
 
 &nbsp;

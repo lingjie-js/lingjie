@@ -143,7 +143,7 @@ Import `lingjie-shell` script in the entry file, then this file will become the 
     }
   </script>
   <!-- import lingjie-shell script -->
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
 </body>
 
 </html>
@@ -187,7 +187,7 @@ Copy the following code to `index.html`, `projectA.html`, and `projectB.html` se
   <!-- modify the title correspondingly -->
   <title>index</title>
   <!-- import lingjie-page script -->
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 </head>
 <body>
   <li>

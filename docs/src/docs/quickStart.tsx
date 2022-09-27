@@ -102,7 +102,7 @@ touch index.html`}
     }
   </script>
   ${t('quick-start.step.2.markdown.code.import-shell-script')}
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
 </body>
 
 </html>
@@ -153,7 +153,7 @@ touch index.html projectA.html projectB.html`}
   ${t('quick-start.step.3.markdown.code.modify-title')}
   <title>index</title>
   ${t('quick-start.step.3.markdown.code.import-lingjie-page')}
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 </head>
 <body>
   <li>

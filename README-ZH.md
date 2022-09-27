@@ -135,7 +135,7 @@ touch index.html
     }
   </script>
   <!-- 引入零界shell脚本 -->
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/shell/lingjie-shell.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
 </body>
 
 </html>
@@ -179,7 +179,7 @@ touch detail.html order.html product.html
   <!-- 根据文件名改为对应的title名称 -->
   <title>index</title>
   <!-- 引入零界page脚本 -->
-  <script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+  <script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 </head>
 <body>
   <li>
