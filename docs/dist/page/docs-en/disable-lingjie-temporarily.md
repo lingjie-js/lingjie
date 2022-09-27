@@ -25,7 +25,7 @@ For example
   }
 </script>
 <!-- import lingjie-page script-->
-<script src="https://unpkg.com/lingjie@1.0.0/dist/page/lingjie-page.umd.js"></script>
+<script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 ```
 
 This will let the page disconnect lingjie micro-frontend in any tabs or browsers.
