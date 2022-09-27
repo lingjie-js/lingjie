@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://github.com/lingjie-js/lingjie/blob/master/assets/logo_pink.jpg" alt="lingjie logo" style="display:block; margin:0 auto;">
+  <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/logo_pink.jpg" alt="lingjie logo" style="display:block; margin:0 auto;">
 </div>
 
-English | [中文](https://github.com/lingjie-js/lingjie/blob/master/README-ZH.md)
+English | [中文](https://github.com/lingjie-js/lingjie/blob/main/README-ZH.md)
 
 # Lingjie (零界)
 
@@ -50,7 +50,7 @@ Lingjie, in contrast, concentrates on decoupling page dimensions and integrates 
 
 ## Demo
 <div align="center">
- <img src="https://github.com/lingjie-js/lingjie/blob/master/assets/lingjie_demo.gif" alt="lingjie demo" style="display:block; margin:0 auto; width:40%">
+ <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/lingjie_demo.gif" alt="lingjie demo" style="display:block; margin:0 auto; width:40%">
 </div>
 
 As shown above, `home Page`, `page A`, `page B`, and `page C` are four different vanilla HTML, representing four separate apps. The transition effect is not made by traditional SPA (like TransitionGroup component in React or Vue). Lingjie mechanism entirely powers it.
@@ -71,7 +71,7 @@ Therefore, lingjie micro-frontend contains two parts:
 
 
 <div align="center">
- <img src="https://github.com/lingjie-js/lingjie/blob/master/assets/lingjie_structure.png" alt="lingjie structure" style="display:block; margin:0 auto; width:80%">
+ <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/lingjie_structure.png" alt="lingjie structure" style="display:block; margin:0 auto; width:80%">
 </div>
 
 
