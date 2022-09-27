@@ -1,5 +1,5 @@
 <div align="center">
- <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/logo_pink.jpg" alt="零界 logo" style="display:block; margin:0 auto;">
+ <img src="https://raw.githubusercontent.com/lingjie-js/lingjie/main/assets/logo_pink.jpg?token=GHSAT0AAAAAABXFZB6K4ULMLEVG5DNC2ZXQYZSYCIQ" alt="零界 logo" style="display:block; margin:0 auto;">
 </div>
 
 [English](https://github.com/lingjie-js/lingjie/blob/main/README.md) | 中文
@@ -38,7 +38,7 @@
 
 ## 效果展示
 <div align="center">
- <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/lingjie_demo.gif" alt="零界demo" style="display:block; margin:0 auto; width:40%">
+ <img src="https://raw.githubusercontent.com/lingjie-js/lingjie/main/assets/lingjie_demo.gif?token=GHSAT0AAAAAABXFZB6LKSFCXQX4UWYCCNF6YZSYB3A" alt="零界demo" style="display:block; margin:0 auto; width:40%">
 </div>
 
 如上图所示，home Page，page A，page B 和 page C 为4个不同的朴素 html 文件，代表4个不同的应用。这4个页面的切换效果并不是通用传统 SPA （React 或 Vue 的 TransitionGroup 等组件）开发出来的，而是通过加入零界微前端，完全通过零界的机制达到的效果。
@@ -61,7 +61,7 @@
 
 
 <div align="center">
- <img src="https://github.com/lingjie-js/lingjie/blob/main/assets/lingjie_structure.png" alt="零界 structure" style="display:block; margin:0 auto; width:80%">
+ <img src="https://raw.githubusercontent.com/lingjie-js/lingjie/main/assets/lingjie_structure.png?token=GHSAT0AAAAAABXFZB6K436ZASZHCXI3IZUMYZSYBIQ" alt="零界 structure" style="display:block; margin:0 auto; width:80%">
 </div>
 
 
