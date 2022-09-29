@@ -1,19 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
+import atom_one_dark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark';
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
+import typescript from 'react-syntax-highlighter/dist/esm/languages/hljs/typescript'
+import bash from 'react-syntax-highlighter/dist/esm/languages/hljs/bash'
+import xml from 'react-syntax-highlighter/dist/esm/languages/hljs/xml'
 
-import tomorrow from 'react-syntax-highlighter/dist/esm/styles/prism/tomorrow';
-
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
-import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
-import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript'
-import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash'
-import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
-
-SyntaxHighlighter.registerLanguage('tsx', tsx)
 SyntaxHighlighter.registerLanguage('ts', typescript)
 SyntaxHighlighter.registerLanguage('bash', bash)
-SyntaxHighlighter.registerLanguage('jsx', jsx)
+SyntaxHighlighter.registerLanguage('html', xml)
 
 export type MarkdownProps = {
   children: string;
@@ -38,17 +34,17 @@ export const Markdown = (props: MarkdownProps) => {
         },
         h1: ({ children }) => {
           return (
-            <div className=" text-2xl leading-relaxed mb-4">{children}</div>
+            <div className="font-bold text-2xl leading-relaxed mb-6 text-gray-800">{children}</div>
           );
         },
         h2: ({ children }) => {
           return (
-            <div className=" text-xl leading-relaxed mb-3">{children}</div>
+            <div className="font-bold text-xl leading-relaxed mb-4 text-gray-700">{children}</div>
           );
         },
         h3: ({ children }) => {
           return (
-            <div className=" text-lg leading-relaxed mb-3">{children}</div>
+            <div className="font-semibold text-lg leading-relaxed mb-3 text-gray-600">{children}</div>
           );
         },
         h4: ({ children }) => {
@@ -103,23 +99,22 @@ export const Markdown = (props: MarkdownProps) => {
         },
         code: ({ node, inline, className, children, ...props }) => {
           const match = /language-(\w+)/.exec(className || '');
-
           const text = Array.isArray(children) ? children.join('\n') : children + '';
 
           return !inline && match ? (
             <div className="text-base leading-relaxed mb-1">
               <SyntaxHighlighter
                 children={text.replace(/\n$/, '')}
-                style={tomorrow}
+                style={atom_one_dark}
                 language={match[1]}
                 PreTag="div"
                 {...(props as any)}
               />
             </div>
           ) : (
-            <span className="bg-pink-100" {...props}>
+            <code className="bg-pink-100 px-2 rounded" {...props}>
               {children}
-            </span>
+            </code>
           );
         },
         blockquote: ({ children }) => {
