@@ -12,16 +12,16 @@ type Rule = {
 };
 
 ```
-#### 让我们拆开来看
-> #### test: string;
+让我们拆开来看
+> ### test: string
 
-配置正则表达式匹配路径
+配置正则表达式匹配路径。
 
-> #### originList?: string[]
+> ### originList?: string[]
 
-激活的域名列表，如不填，则所有域名里都启用
+激活的域名列表，如不填，则所有域名里都启用。
 
-> #### waitFor?: string
+> ### waitFor?: string
 
 配置 wait-for 等待指令，当页面的加载状态达到某个条件时（比如指定某个元素完成挂载时），再进行页面切换。
 
@@ -32,11 +32,11 @@ type Rule = {
 * css selector，也就是 CSS 选择器字符串， 比如：'#demo'，'.classname-foo'
 
 
-> #### timeout?: number
+> ### timeout?: number
 
-配置跳转改页面时，最长等待时间，超出则强行展示页面，默认为5000ms
+配置跳转改页面时，最长等待时间，超出则强行展示页面，默认为5000ms。
 
-> #### backAction:'reload'
+> ### backAction:'reload'
 
 设置该页面回退到其它页面时，其他页面的行为，如不填，则回退页面的状态保持上一次离开时的状态，包括滚动条的位置。
 

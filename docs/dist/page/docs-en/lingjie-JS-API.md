@@ -4,7 +4,9 @@ In some scenarios, redirects are made by javascript instead of the anchor tag.
 
 Lingjie cannot capture the redirect action in such cases, so lingjie provides some APIs for developers to call if needed.
 
-> ## window.lingjie.addPage(url)
+&nbsp;
+
+> ### window.lingjie.addPage(url)
 
 If the URL matches one of the rules in lingjie-shell, the URL will be loaded in the iframe and added to lingjie without page refreshing. Otherwise, reload and refresh the page.
 
@@ -22,7 +24,7 @@ if (window.lingjie) {
 
 &nbsp;
 
-> ## window.lingjie.goto(url)
+> ### window.lingjie.goto(url)
 
 This API is similar to `addPage`. The difference is that calling `goto` always reloads the page even if the URL matches one of the rules in lingjie-shell.
 
@@ -40,7 +42,7 @@ if (window.lingjie) {
 
 &nbsp;
 
-> ## window.lingjie.redirect(url)
+> ### window.lingjie.redirect(url)
 
 Lingjie micro-fronted provides the `redirect` API that allows developers to redirect pages. It's different from `window.location.replace(url)` that `lingjie.redirect` happen in lingjie-shell instead of current page (iframe)
 

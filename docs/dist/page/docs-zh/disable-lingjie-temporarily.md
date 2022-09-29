@@ -1,6 +1,6 @@
 # 如何临时关闭微前端机制？
 
-> ## 方式一：添加url参数
+## 方式一：添加url参数
 
 在页面的 url 路径上添加 `lingjie=0` 后，整个标签内的所有页面都将脱离微前端机制，退化成普通页面，方便打断点等调试。
 
@@ -11,16 +11,19 @@
 
 &nbsp;
 
-> ## 方式二：配置全局变量
+## 方式二：配置全局变量
 
 在页面加载 `page.js` 之前，设置全局变量，如：
 
 ```html
+<!-- before loading lingjie-page script-->
 <script>
   window.__lingjie_config__ = {
     disable: true
   }
 </script>
+<!-- import lingjie-page script-->
+<script src="https://unpkg.com/lingjie/dist/page/lingjie-page.umd.js"></script>
 ```
 
 这个方式影响范围比方式一更大，所有包含这段代码的页面，都退出微前端机制。

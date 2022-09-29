@@ -11,20 +11,19 @@ type Rule = {
   timeout?: number;
   backAction?: 'reload';
 };
-
-
 ```
-#### Let's go through them one by one
 
-> #### test: string;
+Let's go through them one by one.
+
+> ### test: string
 
 Regex path config.
 
-> #### originList?: string[]
+> ### originList?: string[]
 
 Configure origins that allow connecting with lingjie micro-frontend. Support all origins if not set explicitly.
 
-> #### waitFor?: string
+> ### waitFor?: string
 
 Configure wait-for directive. The page will not switch until a specific render state is reached, such as fcp, or a target element is mounted.
 
@@ -34,11 +33,11 @@ Possible value:
 * `loaded`: The document and all sub-resources have finished loading. The state indicates that the load event is about to fire.
 * css selector, i.e.'#demo', '.classname-foo'
 
-> #### timeout?: number
+> ### timeout?: number
 
-The maximum time waits for reaching a specific render state during page switching. It will force a switch if timeout. The default value is 5000 (ms)
+The maximum time waits for reaching a specific render state during page switching. It will force a switch if timeout. The default value is 5000 (ms).
 
-> #### backAction:'reload'
+> ### backAction:'reload'
 
 The action will take on the previous page when going back. The previous page will remain in its state, including the scroll bar position, if `backAction` is` undefined`. The default value is `undefined`.
 
