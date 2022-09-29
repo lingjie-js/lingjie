@@ -4,7 +4,9 @@
 
 这种情况下，零界微前端无法监听到页面的跳转请求，因此零界微前端提供了 API，让开发者可以主动调用。
 
-> ## window.lingjie.addPage(url)
+&nbsp;
+
+> ### window.lingjie.addPage(url)
 
 当符合零界微前端规则时，会新增 iframe 不引起页面刷新；不符合时，则刷新当前页面。
 
@@ -22,7 +24,7 @@ if (window.lingjie) {
 
 &nbsp;
 
-> ## window.lingjie.goto(url)
+> ### window.lingjie.goto(url)
 
 跟 `addPage` 功能类似，区别在于 `goto` 总是刷新页面，不管是否符合零界微前端规则。
 
@@ -40,7 +42,7 @@ if (window.lingjie) {
 
 &nbsp;
 
-> ## window.lingjie.redirect(url)
+> ### window.lingjie.redirect(url)
 零界微前端提供了 `redirect` 方法，用于重定向的页面，同时在浏览器历史记录中将新页面替换旧页面，历史记录的总条数不变。跟页面里 `window.location.replace(url)` 的方式不同，`lingjie.redirect` 是在零界shell页面重定向，而不是当前页面(iframe)。
 
 注：当重定向至未接入零界微前端应用时，如果不通过 `redirect` 方法去重定向，浏览器地址栏 url 将不会随着 iframe 页面跳转而变化。

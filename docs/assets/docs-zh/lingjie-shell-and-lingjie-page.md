@@ -1,8 +1,10 @@
 # 零界shell和零界page配置
 
-在零界shell页面和零界page页面中，可以添加一些自定义配置使零界更加灵活
+在零界shell页面和微应用（引入零界page脚本的页面）中，可以添加一些自定义配置使零界更加灵活。
 
-> ## 零界shell
+&nbsp;
+
+## 零界shell
 
 在零界shell页面中，可以在 `window` 中添加 `__lingjie_shell_config__` 变量来设置哪些页面可以加入零界微前端、设置回退行为、是否关闭滑动效果等等，
 
@@ -12,19 +14,22 @@ type LingjieShellConfig = {
   turnoffSlideAnimation?: boolean;
 }
 ```
+&nbsp;
 
-* rules?: Rule[];
+> ### rules?: Rule[];
 
 参考[零界微前端链接配置规则](/docs/usage.html?title=lingjie-config-rule)
 
-* turnoffSlideAnimation?: boolean;
+> ### turnoffSlideAnimation?: boolean;
 
 是否关闭小屏滑动效果，默认为 `false`
 
 
 注意，`__lingjie_shell_config__` 变量的设置要放在加载 `lingjie-shell` 脚本之前。
 
-例如
+&nbsp;
+
+### 例如
 
 ```html
 <!-- 零界配置规则，放在引入lingjie-shell脚本之前 -->
@@ -46,7 +51,9 @@ type LingjieShellConfig = {
 
 &nbsp;
 
-> ## 零界page
+&nbsp;
+
+## 零界page
 
 在引入 `lingjie-page` 脚本的页面中，可以在 `window` 中添加 `__lingjie_config__` 变量来设置接入零界的应用的相关配置
 
@@ -56,20 +63,21 @@ type LingjieConfig = {
   shellSrc?: string;
 }
 ```
+&nbsp;
 
-
-* disable?: boolean;
+> ### disable?: boolean;
 
 设置该页面是否接入零界微前端，默认为 `false`
 
-* shellSrc?: string;
+> ### shellSrc?: string;
 
-`零界shell` 的路径，默认为 `/lingjie`
+零界shell的路径，默认为 `/lingjie`
 
 注意，`__lingjie_config__` 变量的设置要放在加载 `lingjie-page` 脚本之前。
 
+&nbsp;
 
-例如
+### 例如
 
 ```html
 <!-- 接入零界的应用的配置，放在引入lingjie-page脚本之前 -->

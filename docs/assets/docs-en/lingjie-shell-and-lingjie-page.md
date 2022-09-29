@@ -1,8 +1,10 @@
 # Lingjie-shell & Lingjie-page
 
-Adding some configs to `shell` and apps that want to connect lingjie could make lingjie micro-frontend more flexible.
+Adding some configs to shell and micro-app could make lingjie micro-frontend more flexible.
 
-> ## lingjie shell
+&nbsp;
+
+## lingjie shell
 
 Configuring `window.__lingjie_shell_config__` in the `shell` could set which pages are allowed to join the lingjie micro-frontend, their back actions, turn off the sliding animation, etc.
 
@@ -12,18 +14,22 @@ type LingjieShellConfig = {
   turnoffSlideAnimation?: boolean;
 }
 ```
-* rules?: Rule[];
+&nbsp;
+
+> ### rules?: Rule[];
 
 Reference [Lingjie Rule Config](/docs/usage.html?title=lingjie-config-rule)
 
-* turnoffSlideAnimation?: boolean;
+> ### turnoffSlideAnimation?: boolean;
 
 Whether or not turn off the slide animation, default is `false`
 
 
 Please note that `window.__lingjie_shell_config__` configuration should place before importing the `lingjie-shell` script.
 
-For example
+&nbsp;
+
+### For example
 
 ```html
 <!-- set lingjie rule before importing lingjie-shell script -->
@@ -45,7 +51,9 @@ For example
 
 &nbsp;
 
-> ## lingjie page
+&nbsp;
+
+## lingjie page
 
 Setting the `window.__lingjie_config__` variable in the apps that import `lingjie-page` to configure lingjie.
 
@@ -55,18 +63,21 @@ type LingjieConfig = {
   shellSrc?: string;
 }
 ```
+&nbsp;
 
-* disable?: boolean;
+> ### disable?: boolean;
 
 Whether or not connect lingjie micro-frontend. The default value is `false`.
 
-* shellSrc?: string;
+> ### shellSrc?: string;
 
-The path of `lingjie-shell`. The default value is `/lingjie`
+The path of lingjie-shell. The default value is `/lingjie`
 
 Please note that `window.__lingjie_config__` configuration should place before importing the `lingjie-page` script.
 
-For example
+&nbsp;
+
+### For example
 
 ```html
 <!-- set lingjie config，before importing lingjie-page script -->

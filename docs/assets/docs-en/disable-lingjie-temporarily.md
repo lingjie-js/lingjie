@@ -1,6 +1,6 @@
 # How to Disable Lingjie Temporarily
 
-> ## 1st Method: add url search parameter
+## 1st Method: add url search parameter
 
 All pages in this tab will disable lingjie micro-frontend once adding `lingjie=0` to the url. It's convenient to add breakpoints for debugging.
 
@@ -11,7 +11,7 @@ Please note that this will only work on current tab. Other tabs or browsers will
 
 &nbsp;
 
-> ## 2nd Method: configure global variable
+## 2nd Method: configure global variable
 
 Setting global variable `window.__lingjie_config__` before loading `lingjie-page` script.
 

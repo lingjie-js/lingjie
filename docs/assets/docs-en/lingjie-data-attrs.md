@@ -6,53 +6,59 @@ Lingjie supports configuring HTML attributes to set page switching behaviors. Th
 
 Please note that `data-lingjie-disable` and `data-lingjie-enable` will affect the nearest parent anchor element.
 
-> ## data-lingjie-wait-for={selector}
+&nbsp;
+
+> ### data-lingjie-wait-for={selector}
 
 Page switching will not happen until the selected HTML elements are mounted.
 
 &nbsp;
 
-> ## data-lingjie-timeout={number}
+> ### data-lingjie-timeout={number}
 
 The maximum time waits for reaching a specific render state during page switching. It will force a switch if timeout. It prevents waiting a long time and staying on the previous page permanently.
 
 &nbsp;
 
-> ## data-lingjie-back-action="reload"
+> ### data-lingjie-back-action="reload"
 
 The action will be taken on the previous page when returning to the previous page. Now `reload` is supported. If set `backAction` to `reload`, the previous page will reload without refreshing after going back.
 
 &nbsp;
 
-> ## data-lingjie-enable
+> ### data-lingjie-enable
 
-All the sections that are wrapped in this element will enable lingjie micro-frontend
+The whole section that is wrapped in this element will enable lingjie micro-frontend.
 
 &nbsp;
 
-> ## data-lingjie-disable
+> ### data-lingjie-disable
 
-All the sections that are wrapped in this element will disable lingjie micro-frontend
+The whole section that is wrapped in this element will disable lingjie micro-frontend.
 
 
 &nbsp;
 ## For example
 
-```jsx
+```html
 <li>
+  <!--  
+    The current page will not redirect to "/lingjie/docs/b.html" until 
+    "#trigger-show" element is mounted in "/lingjie/docs/b.html".
+    In addition, after switching to "/lingjie/docs/b.html" via this anchor tag,
+    the current page will reload before showing up when returning 
+    from "/lingjie/docs/b.html".
+  -->
   <a
-    // wait for #trigger-show element
     data-lingjie-wait-for="#trigger-show"
-    // page reload when going back
     data-lingjie-back-action="reload"
-    // target address
     href="/lingjie/docs/b.html"
     >b.html</a>
 </li>
 <li>
+  <!-- disable the lingjie micro-frontend -->
   <a
    href="/lingjie/docs/c.html"
-   // disable the lingjie micro-frontend
    data-lingjie-disable
    >c.html</a>
 </li>

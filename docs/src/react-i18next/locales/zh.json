@@ -46,53 +46,7 @@
   },
   "quick-start": {
     "title": "快速开始",
-    "step": {
-      "1": {
-        "title": "初始化项目"
-      },
-      "2": {
-        "title": "创建零界shell",
-        "markdown": {
-          "blockquote": {
-            "create-lingjie-shell": "新建一个文件夹存放零界shell页面， 所有接入零界微前端的应用都会作为iframe在这里进行加载、切换、销毁。"
-          },
-          "code": {
-            "lingjie-rules": "<!-- 零界配置规则，放在引入lingjie-shell脚本之前 -->",
-            "import-shell-script": "<!-- 引入零界shell脚本 -->"
-          }
-        },
-        "create-lingjie-folder": "新建 lingjie 文件夹",
-        "create-entry-file": "创建入口文件 index.html",
-        "import-lingjie-shell": "在入口文件中引入<0>零界shell</0>脚本，这个文件就会成为零界<1>shell</1>。之后在shell中设置__lingjie_shell_config__变量来配置零界规则，该规则设置允许加入零界微前端的路径匹配规则和相关行为，请注意零界配置规则应放在引入零界shell脚本之前，下面为示例代码，关于<2>配置规则</2>。"
-      },
-      "3": {
-        "title": "接入零界",
-        "markdown": {
-          "blockquote": {
-            "create-lingjie-page": "此时零界shell已准备完毕，接下来创建接入零界的应用，以下为示例代码"
-          },
-          "code": {
-            "modify-title": "<!-- 根据文件名改为对应的title名称 -->",
-            "import-lingjie-page": "<!-- 引入零界page脚本 -->",
-            "modify-content": "<!-- 根据文件名改为对应的内容 -->"
-          }
-        },
-        "one-level-up": "返回上一层目录",
-        "create-demo-folder": "创建demo文件夹",
-        "create-demo-files": "创建 index.html，projectA.html 和 projectB.html。index.html 为demo的入口文件，projectA.html 和 projectB.html分别为两个不同的应用",
-        "import-lingjie-page": "将下面的代码分别写入 index.html，projectA.html 和 projectB.html中。把每一页的title和文字内容改为对应的index，projectA 和 projectB。请注意这里引入了<0>零界page脚本</0>，该脚本可以让页面重定向到<1>零界shell</1>。"
-      },
-      "4": {
-        "title": "目录结构"
-      },
-      "5": {
-        "title": "验收效果",
-        "install-npx": "安装npx，如果已经安装可以跳过这一步",
-        "start-local-server": "在本地8080端口开启一个服务",
-        "instruction": "在浏览器中打开网址<0>http://localhost:8080/demo</0>，点击里面的 go to index ，go to project A或 go to project B，页面之间的跳转应当<1>无刷新切换</1>。",
-        "more": "更多用法"
-      }
-    }
+    "more": "更多用法"
   },
   "usage-index": {
     "title": "更多用法与常见问题",
