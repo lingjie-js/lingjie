@@ -8,7 +8,7 @@
     "build": "npm run build:shell && npm run build:docs",
     "build:shell": "vite build --config ./vite.config.shell.ts --mode production",
     "build:docs": "vite build --config ./vite.config.docs.ts --mode production",
-    "preview": "vite preview --base /lingjie-docs",
+    "preview": "vite preview --host --base /lingjie/dist",
     "prebuild": "rimraf lib dist"
   },
   "dependencies": {
