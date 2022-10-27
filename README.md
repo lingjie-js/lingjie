@@ -6,6 +6,8 @@ English | [中文](https://github.com/lingjie-js/lingjie/blob/main/README-ZH.md)
 
 # Lingjie (零界)
 
+[Documentation](https://lingjie-js.github.io/lingjie/dist/page/docs/index.html)
+
 ## Background
 Currently, most micro-frontend frameworks aim to decouple web apps by any scale of sections as desired. It enables to split of complex features or shared areas out of the app and lets them develop and deploy independently. However, in the case of decoupling pages, the extra overhead is unavoidable; sometimes, the cost is too high for medium and large apps to adopt these frameworks. We wish to organize multiple apps with simple, low-cost, and modified existed apps as little as possible.
 
