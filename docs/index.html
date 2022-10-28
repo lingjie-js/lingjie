@@ -38,30 +38,26 @@
           {
             test: `<{ VITE_DOCS_PATH }>/docs/index`,
             timeout: 5000,
-            backAction: "reload",
             waitFor:'loaded'
           },
           {
             test: `<{ VITE_DOCS_PATH }>/docs/quick-start`,
             timeout: 5000,
-            backAction: "reload",
             waitFor:'code',
           },
           {
             test: `<{ VITE_DOCS_PATH }>/docs/usage-index`,
             timeout: 5000,
-            backAction: "reload",
             waitFor:'svg',
           },
           {
             test: `<{ VITE_DOCS_PATH }>/docs/usage`,
             timeout: 5000,
-            backAction: "reload",
             waitFor:'code, img',
           },
         ],
       };
     </script>
-    <script type="module" src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
+    <script src="https://unpkg.com/lingjie/dist/shell/lingjie-shell.umd.js"></script>
   </body>
 </html>

@@ -26,17 +26,32 @@ export type ConfigProviderProps = {
 };
 
 export const ConfigProvider = ({ children }: ConfigProviderProps) => {
-  const [localeFromLS, setLocaleToLS] = useLocalStorage(LINGJIE_LOCALE_KEY, 'en');
 
+  const [localeFromLS, setLocaleToLS] = useLocalStorage(LINGJIE_LOCALE_KEY, 'en');
   const [locale, setLocale] = useState(localeFromLS)
+
   const updateLocale = useCallback((newLocale: string) => {
+    // update the locale stored in local storage
+    setLocaleToLS(newLocale)
     // update locale state
     setLocale(newLocale)
-    // update the locale stored in localstorage
-    setLocaleToLS(newLocale)
-  }, [setLocale, setLocaleToLS])
+  }, [setLocaleToLS, setLocale])
 
   const { t, i18n } = useTranslation()
+
+  const localStorageHandler = useCallback((event: StorageEvent) => {
+    if (event.key === LINGJIE_LOCALE_KEY && event.newValue && event.newValue !== locale) {
+      updateLocale(event.newValue)
+    }
+  }, [updateLocale])
+
+  useEffect(() => {
+    window.addEventListener('storage', localStorageHandler)
+
+    return () => {
+      window.removeEventListener('storage', localStorageHandler)
+    }
+  }, [localStorageHandler])
 
   useEffect(() => {
     i18n.changeLanguage(locale)
