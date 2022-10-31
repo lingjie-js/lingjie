@@ -174,7 +174,7 @@ cd ./demo
 Creating `index.html`, `projectA.html`, and `projectB.html`. `index.html` is the entry file of the demo. `projectA.html` and `projectB.html` represent two different apps.
 
 ```bash
-touch detail.html order.html product.html
+touch index.html projectA.html projectB.html
 ```
 
 Copy the following code to `index.html`, `projectA.html`, and `projectB.html` separately. Modify the title and content correspondingly. Please note we import `lingjie-page` script here, which let the app redirect to `lingjie-shell`.
