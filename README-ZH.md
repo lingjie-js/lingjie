@@ -166,7 +166,7 @@ cd ./demo
 创建 index.html，projectA.html 和 projectB.html。 index.html 为demo的入口文件，projectA.html 和 projectB.html分别代表两个不同的应用。
 
 ```bash
-touch detail.html order.html product.html
+touch index.html projectA.html projectB.html
 ```
 
 将下面的代码分别写入 index.html，projectA.html 和 projectB.html中。把每一页的title和文字内容改为对应的index，projectA 和 projectB。请注意这里引入了`零界page`脚本，该脚本可以让页面重定向到`零界shell`。
