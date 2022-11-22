@@ -6,6 +6,7 @@ import {
   genHistoryTracerId,
 } from './history-tracer';
 import { onDocumentTitleChange } from './onDocumentTitleChange';
+import { onFaviconChange } from './onFaviconChange'
 import { Progress } from 'rsup-progress';
 import { testUrl } from './testUrl';
 
@@ -382,6 +383,18 @@ export const createIframeManager = (options: Partial<IframeManagerOptions>) => {
     });
   };
 
+  const syncFavicon = (iframeWindow: Window) => {
+    onFaviconChange(iframeWindow, (faviconLink) => {
+      let linkEle = window.document.querySelector("head > link[rel='icon']") as HTMLLinkElement | undefined
+      if (!linkEle) {
+        linkEle = window.document.createElement('link')
+        linkEle.rel = 'icon'
+        document.getElementsByTagName('head')[0].appendChild(linkEle)
+      }
+      linkEle.href = faviconLink
+    });
+  };
+
   const delegateAnchorClick = (iframeWindow: Window) => {
     const getStatus = (target?: HTMLAnchorElement) => {
       if (!target) {
@@ -660,6 +673,7 @@ export const createIframeManager = (options: Partial<IframeManagerOptions>) => {
     show(delta);
     delegateAnchorClick(iframeWindow);
     syncDocumentTitle(iframeWindow);
+    syncFavicon(iframeWindow);
   };
 
   const addPage = (url: string, attrs?: Record<string, string>) => {
